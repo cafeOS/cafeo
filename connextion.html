@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proverbe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="photo"> </div>
+    <div class="container">
+        <!-- Connexion -->
+        <div id="loginForm" class="form active">
+            <h2>Se connecter</h2>
+            <input type="text" id="loginEmail" placeholder="Nom">
+            <input type="password" id="loginPassword" placeholder="Mot de passe">
+            <button onclick="login()">Entrer</button>
+            <div class="link">Pas encore de compte ? <a onclick="showRegister()">Créer un compte</a></div>
+        </div>
+
+        <!-- Création -->
+        <div id="registerForm" class="form">
+            <h2>Créer un compte</h2>
+            <input type="text" id="newEmail" placeholder="Nom">
+            <input type="password" id="newPassword" placeholder="Mot de passe">
+            <button onclick="createAccount()">Créer</button>
+            <div class="link">Déjà un compte ? <a onclick="showLogin()">Se connecter</a></div>
+        </div>
+    </div>
+   
+    <footer>&copy; 2025 CafeOS. </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
